@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scientific_essays_BAS </title>
+</head>
+<body>
+<h1>scientific_essays_BAS </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>conclusion</th>
+      <th>none</th>
+      <th>premise</th>
+      <th>thesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>67.500000</td>
+      <td>2.500000</td>
+      <td>102.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>75.555556</td>
+      <td>3.833333</td>
+      <td>109.166667</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>25.368883</td>
+      <td>3.023060</td>
+      <td>28.560365</td>
+      <td>0.687184</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/basclassifiedasconclusion_qqplot.png"  height="200px" />
+    
+        <img src="../images/basclassifiedasnone_qqplot.png"  height="200px" />
+    
+        <img src="../images/basclassifiedaspremise_qqplot.png"  height="200px" />
+    
+        <img src="../images/basclassifiedasthesis_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforbasclassifiedasconclusion_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbasclassifiedasnone_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbasclassifiedaspremise_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbasclassifiedasthesis_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/scientific_essays_bas_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.911726474762, p-val:0.0922837182879<span style="color:green"><br />Normally distributed for BAS classified as conclusion</span><br /><br />
+    
+        <br />stat: 0.812122702599, p-val:0.00226465566084<br />Not Normally distributed for BAS classified as none<br /><br />
+    
+        <br />stat: 0.904834628105, p-val:0.0697982162237<span style="color:green"><br />Normally distributed for BAS classified as premise</span><br /><br />
+    
+        <br />stat: 0.806952059269, p-val:0.0019074495649<br />Not Normally distributed for BAS classified as thesis<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 51.8863636364<br />p-value: 3.1668429262e-11<br /><br />statistic: 264.020408163<br />p-value: 1.11022302463e-16<br />chi2:50.7333333333<br />ranking[1.8888888888888888, 1.1111111111111112, 3.9444444444444446, 3.0555555555555554]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: premise vs thesis<br />z_value: 6.58407168855<br />p_value: 4.57736071269e-11<br />adj_p_value: 2.74641642761e-10<br />--------------------------------------------------------------------------<br /><br />Comparing: none vs premise<br />z_value: 4.77667946032<br />p_value: 1.7821350895e-06<br />adj_p_value: 8.9106754475e-06<br />--------------------------------------------------------------------------<br /><br />Comparing: thesis vs conclusion<br />z_value: 4.51848057058<br />p_value: 6.22849876963e-06<br />adj_p_value: 2.49139950785e-05<br />--------------------------------------------------------------------------<br /><br />Comparing: none vs conclusion<br />z_value: 2.71108834235<br />p_value: 0.00670627560781<br />adj_p_value: 0.0201188268234<br />--------------------------------------------------------------------------<br /><br />Comparing: premise vs conclusion<br />z_value: 2.06559111798<br />p_value: 0.0388671038124<br />adj_p_value: 0.0777342076248<br />--------------------------------------------------------------------------<br /><br />Comparing: none vs thesis<br />z_value: 1.80739222823<br />p_value: 0.070701144866<br />adj_p_value: 0.0777342076248<br />--------------------------------------------------------------------------
+</body>
+</html>

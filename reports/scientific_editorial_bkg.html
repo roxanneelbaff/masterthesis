@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scientific_editorial_BKG </title>
+</head>
+<body>
+<h1>scientific_editorial_BKG </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>anecdote</th>
+      <th>other</th>
+      <th>statistics</th>
+      <th>testimony</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>64.000000</td>
+      <td>85.000000</td>
+      <td>1.000000</td>
+      <td>11.500000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>63.512500</td>
+      <td>84.812500</td>
+      <td>1.450000</td>
+      <td>11.887500</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>19.986241</td>
+      <td>29.079672</td>
+      <td>1.482397</td>
+      <td>4.893858</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/bkgclassifiedasanecdote_qqplot.png"  height="200px" />
+    
+        <img src="../images/bkgclassifiedasother_qqplot.png"  height="200px" />
+    
+        <img src="../images/bkgclassifiedasstatistics_qqplot.png"  height="200px" />
+    
+        <img src="../images/bkgclassifiedastestimony_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforbkgclassifiedasanecdote_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbkgclassifiedasother_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbkgclassifiedasstatistics_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforbkgclassifiedastestimony_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/scientific_editorial_bkg_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.905580341816, p-val:2.11203023355e-05<br />Not Normally distributed for BKG classified as anecdote<br /><br />
+    
+        <br />stat: 0.963840723038, p-val:0.0231954660267<br />Not Normally distributed for BKG classified as other<br /><br />
+    
+        <br />stat: 0.849908947945, p-val:1.60716240316e-07<br />Not Normally distributed for BKG classified as statistics<br /><br />
+    
+        <br />stat: 0.939220011234, p-val:0.000874877150636<br />Not Normally distributed for BKG classified as testimony<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 229.5<br />p-value: 1.77386164384e-49<br /><br />statistic: 1726.71428571<br />p-value: 1.11022302463e-16<br />chi2:229.5<br />ranking[1.0, 3.875, 2.0, 3.125]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: anecdote vs statistics<br />z_value: 10.4103314068<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: statistics vs other<br />z_value: 14.084566021<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: other vs testimony<br />z_value: 9.18558653544<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs testimony<br />z_value: 5.51135192126<br />p_value: 3.56087936915e-08<br />adj_p_value: 1.06826381074e-07<br />--------------------------------------------------------------------------<br /><br />Comparing: statistics vs testimony<br />z_value: 4.89897948557<br />p_value: 9.6335700861e-07<br />adj_p_value: 1.92671401722e-06<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs other<br />z_value: 3.67423461417<br />p_value: 0.000238563454029<br />adj_p_value: 0.000238563454029<br />--------------------------------------------------------------------------
+</body>
+</html>

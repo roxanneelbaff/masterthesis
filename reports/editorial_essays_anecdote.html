@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editorial_essays_anecdote </title>
+</head>
+<body>
+<h1>editorial_essays_anecdote </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>conclusion</th>
+      <th>none</th>
+      <th>premise</th>
+      <th>thesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>18.000000</td>
+      <td>3.000000</td>
+      <td>15.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>18.400000</td>
+      <td>3.136667</td>
+      <td>17.240000</td>
+      <td>0.403333</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8.214621</td>
+      <td>2.167484</td>
+      <td>9.697546</td>
+      <td>0.523439</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/anecdoteclassifiedasconclusion_qqplot.png"  height="200px" />
+    
+        <img src="../images/anecdoteclassifiedasnone_qqplot.png"  height="200px" />
+    
+        <img src="../images/anecdoteclassifiedaspremise_qqplot.png"  height="200px" />
+    
+        <img src="../images/anecdoteclassifiedasthesis_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforanecdoteclassifiedasconclusion_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforanecdoteclassifiedasnone_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforanecdoteclassifiedaspremise_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforanecdoteclassifiedasthesis_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/editorial_essays_anecdote_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.974863350391, p-val:4.0902326873e-05<br />Not Normally distributed for anecdote classified as conclusion<br /><br />
+    
+        <br />stat: 0.895572543144, p-val:1.64382545661e-13<br />Not Normally distributed for anecdote classified as none<br /><br />
+    
+        <br />stat: 0.923587024212, p-val:2.89832238071e-11<br />Not Normally distributed for anecdote classified as premise<br /><br />
+    
+        <br />stat: 0.656963407993, p-val:3.60469556767e-24<br />Not Normally distributed for anecdote classified as thesis<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 760.628716216<br />p-value: 1.49509624696e-164<br /><br />statistic: 1500.84349187<br />p-value: 1.11022302463e-16<br />chi2:750.487<br />ranking[1.9383333333333332, 1.1066666666666667, 3.4500000000000002, 3.5049999999999999]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: none vs premise<br />z_value: 14.3409291889<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: none vs conclusion<br />z_value: 14.8627050028<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: premise vs thesis<br />z_value: 22.230811951<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: thesis vs conclusion<br />z_value: 22.7525877649<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: none vs thesis<br />z_value: 7.88988276212<br />p_value: 3.10862446895e-15<br />adj_p_value: 6.2172489379e-15<br />--------------------------------------------------------------------------<br /><br />Comparing: premise vs conclusion<br />z_value: 0.521775813928<br />p_value: 0.60182643132<br />adj_p_value: 0.60182643132<br />--------------------------------------------------------------------------
+</body>
+</html>

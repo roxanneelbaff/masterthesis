@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>essays_editorial_conclusion </title>
+</head>
+<body>
+<h1>essays_editorial_conclusion </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>anecdote</th>
+      <th>other</th>
+      <th>statistics</th>
+      <th>testimony</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>5.000000</td>
+      <td>10.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>5.313433</td>
+      <td>10.278607</td>
+      <td>0.333333</td>
+      <td>0.751244</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.812414</td>
+      <td>3.325911</td>
+      <td>0.609488</td>
+      <td>0.796642</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/conclusionclassifiedasanecdote_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasother_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasstatistics_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedastestimony_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforconclusionclassifiedasanecdote_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasother_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasstatistics_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedastestimony_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/essays_editorial_conclusion_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.951867103577, p-val:3.62086971517e-10<br />Not Normally distributed for conclusion classified as anecdote<br /><br />
+    
+        <br />stat: 0.964600086212, p-val:2.82651200223e-08<br />Not Normally distributed for conclusion classified as other<br /><br />
+    
+        <br />stat: 0.579715132713, p-val:5.33710734539e-30<br />Not Normally distributed for conclusion classified as statistics<br /><br />
+    
+        <br />stat: 0.791533112526, p-val:2.47301911066e-22<br />Not Normally distributed for conclusion classified as testimony<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 1114.88452474<br />p-value: 2.14706650332e-241<br /><br />statistic: 2891.97959267<br />p-value: 1.11022302463e-16<br />chi2:1059.14029851<br />ranking[1.3457711442786069, 3.9228855721393034, 1.6592039800995024, 3.072139303482587]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: anecdote vs statistics<br />z_value: 18.9586352554<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs other<br />z_value: 9.34272803651<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs testimony<br />z_value: 15.5165775577<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: statistics vs other<br />z_value: 28.3013632919<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: other vs testimony<br />z_value: 24.8593055942<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: statistics vs testimony<br />z_value: 3.44205769766<br />p_value: 0.000577307100197<br />adj_p_value: 0.000577307100197<br />--------------------------------------------------------------------------
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>essays_scientific_conclusion </title>
+</head>
+<body>
+<h1>essays_scientific_conclusion </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AIM</th>
+      <th>BAS</th>
+      <th>BKG</th>
+      <th>CTR</th>
+      <th>OTH</th>
+      <th>OWN</th>
+      <th>TXT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>13.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.047264</td>
+      <td>0.0</td>
+      <td>0.465174</td>
+      <td>13.037313</td>
+      <td>0.022388</td>
+      <td>2.587065</td>
+      <td>0.517413</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.212202</td>
+      <td>0.0</td>
+      <td>0.680233</td>
+      <td>3.977687</td>
+      <td>0.147942</td>
+      <td>1.589340</td>
+      <td>0.786038</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/conclusionclassifiedasaim_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasbas_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasbkg_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasctr_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasoth_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedasown_qqplot.png"  height="200px" />
+    
+        <img src="../images/conclusionclassifiedastxt_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforconclusionclassifiedasaim_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasbas_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasbkg_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasctr_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasoth_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedasown_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforconclusionclassifiedastxt_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/essays_scientific_conclusion_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.215843319893, p-val:7.9407845309e-38<br />Not Normally distributed for conclusion classified as AIM<br /><br />
+    
+        <br />stat: 1.0, p-val:1.0<span style="color:green"><br />Normally distributed for conclusion classified as BAS</span><br /><br />
+    
+        <br />stat: 0.679912030697, p-val:7.0349945304e-27<br />Not Normally distributed for conclusion classified as BKG<br /><br />
+    
+        <br />stat: 0.969732642174, p-val:2.1335472411e-07<br />Not Normally distributed for conclusion classified as CTR<br /><br />
+    
+        <br />stat: 0.129864275455, p-val:3.17374483991e-39<br />Not Normally distributed for conclusion classified as OTH<br /><br />
+    
+        <br />stat: 0.904812932014, p-val:3.52471267539e-15<br />Not Normally distributed for conclusion classified as OWN<br /><br />
+    
+        <br />stat: 0.678562164307, p-val:6.31576793343e-27<br />Not Normally distributed for conclusion classified as TXT<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 1983.18948291<br />p-value: 0.0<br /><br />statistic: 668.61951629<br />p-value: 1.11022302463e-16<br />chi2:1507.74200426<br />ranking[2.6666666666666665, 3.6094527363184081, 2.6144278606965172, 6.9950248756218905, 2.7338308457711444, 5.721393034825871, 3.6592039800995027]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: OTH vs CTR<br />z_value: 28.4065069575<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: OTH vs OWN<br />z_value: 20.0478106574<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: BKG vs CTR<br />z_value: 22.219112626<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: BKG vs OWN<br />z_value: 13.8604163258<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: BAS vs CTR<br />z_value: 28.7493441104<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: BAS vs OWN<br />z_value: 20.3906478103<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: CTR vs AIM<br />z_value: 27.9657163323<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: CTR vs OWN<br />z_value: 8.35869630014<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: CTR vs TXT<br />z_value: 21.8926010517<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: AIM vs OWN<br />z_value: 19.6070200322<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: OWN vs TXT<br />z_value: 13.5339047516<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: BAS vs TXT<br />z_value: 6.85674305871<br />p_value: 7.04480918046e-12<br />adj_p_value: 7.04480918046e-11<br />--------------------------------------------------------------------------<br /><br />Comparing: BKG vs BAS<br />z_value: 6.53023148448<br />p_value: 6.56681375943e-11<br />adj_p_value: 5.91013238349e-10<br />--------------------------------------------------------------------------<br /><br />Comparing: OTH vs TXT<br />z_value: 6.51390590577<br />p_value: 7.32214289201e-11<br />adj_p_value: 5.91013238349e-10<br />--------------------------------------------------------------------------<br /><br />Comparing: OTH vs BKG<br />z_value: 6.18739433155<br />p_value: 6.11668271588e-10<br />adj_p_value: 4.28167790112e-09<br />--------------------------------------------------------------------------<br /><br />Comparing: AIM vs TXT<br />z_value: 6.07311528057<br />p_value: 1.25452315203e-09<br />adj_p_value: 7.52713891217e-09<br />--------------------------------------------------------------------------<br /><br />Comparing: BKG vs AIM<br />z_value: 5.74660370635<br />p_value: 9.1053793394e-09<br />adj_p_value: 4.5526896697e-08<br />--------------------------------------------------------------------------<br /><br />Comparing: BAS vs AIM<br />z_value: 0.783627778138<br />p_value: 0.433258551452<br />adj_p_value: 1<br />--------------------------------------------------------------------------<br /><br />Comparing: OTH vs AIM<br />z_value: 0.440790625203<br />p_value: 0.659364581041<br />adj_p_value: 1<br />--------------------------------------------------------------------------<br /><br />Comparing: OTH vs BAS<br />z_value: 0.342837152935<br />p_value: 0.731720973943<br />adj_p_value: 1<br />--------------------------------------------------------------------------<br /><br />Comparing: BKG vs TXT<br />z_value: 0.326511574224<br />p_value: 0.744037333762<br />adj_p_value: 1<br />--------------------------------------------------------------------------
+</body>
+</html>

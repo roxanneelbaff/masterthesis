@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scientific_editorial_OTH </title>
+</head>
+<body>
+<h1>scientific_editorial_OTH </h1>
+
+
+<h3>Describing the Data-Set</h3>
+<h4>Mean, Median and Standard Deviation</h4>
+<div class="container">
+    
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>anecdote</th>
+      <th>other</th>
+      <th>statistics</th>
+      <th>testimony</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>median</th>
+      <td>66.000000</td>
+      <td>89.000000</td>
+      <td>2.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>67.638298</td>
+      <td>87.361702</td>
+      <td>1.851064</td>
+      <td>11.808511</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>22.614649</td>
+      <td>33.018000</td>
+      <td>1.584214</td>
+      <td>5.026053</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div>
+<br /><br />
+
+<br /><br />
+<h4>QQ Plots</h4>
+<div class="container">
+    
+        <img src="../images/othclassifiedasanecdote_qqplot.png"  height="200px" />
+    
+        <img src="../images/othclassifiedasother_qqplot.png"  height="200px" />
+    
+        <img src="../images/othclassifiedasstatistics_qqplot.png"  height="200px" />
+    
+        <img src="../images/othclassifiedastestimony_qqplot.png"  height="200px" />
+    
+</div>
+<br /><br />
+<h4>Histograms</h4>
+<div class="container">
+    
+        <img src="../images/histogramforothclassifiedasanecdote_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforothclassifiedasother_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforothclassifiedasstatistics_histogram.png" height="200px" />
+    
+        <img src="../images/histogramforothclassifiedastestimony_histogram.png" height="200px" />
+    
+</div>
+<br /><br />
+<h4>Box Plot(s)</h4>
+<div class="container">
+    
+        <img src="../images/scientific_editorial_oth_boxplot.png" height="250px"  />
+    
+</div>
+<br /><br />
+<h4>Normalization Test</h4>
+<div class="container">
+    
+        <br />stat: 0.906225442886, p-val:0.00114474853035<br />Not Normally distributed for OTH classified as anecdote<br /><br />
+    
+        <br />stat: 0.956594944, p-val:0.0788197517395<span style="color:green"><br />Normally distributed for OTH classified as other</span><br /><br />
+    
+        <br />stat: 0.884806513786, p-val:0.000244256167207<br />Not Normally distributed for OTH classified as statistics<br /><br />
+    
+        <br />stat: 0.905328989029, p-val:0.00107003015<br />Not Normally distributed for OTH classified as testimony<br /><br />
+    
+</div>
+
+<br />
+<br />
+<h3>Significancy Test</h3>
+Using friedmann-test
+<br />
+<br />
+Using friedmann-test<br />using stats.friedmanchisquare <br /> chisq: 133.85106383<br />p-value: 7.99964610039e-29<br /><br />statistic: 861.267857143<br />p-value: 1.11022302463e-16<br />chi2:133.85106383<br />ranking[1.0, 3.8510638297872339, 2.0, 3.1489361702127661]<br /><br /><strong>Post Hoc Analysis (holm_multitest):</strong><br />------------------------------------------------------<br /><br />Comparing: statistics vs other<br />z_value: 10.70573519<br />p_value: 0.0<br />adj_p_value: 0.0<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs statistics<br />z_value: 8.06924816556<br />p_value: 6.66133814775e-16<br />adj_p_value: 3.33066907388e-15<br />--------------------------------------------------------------------------<br /><br />Comparing: other vs testimony<br />z_value: 6.95073851885<br />p_value: 3.6337599596e-12<br />adj_p_value: 1.45350398384e-11<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs testimony<br />z_value: 4.31425149446<br />p_value: 1.60144558892e-05<br />adj_p_value: 4.80433676675e-05<br />--------------------------------------------------------------------------<br /><br />Comparing: statistics vs testimony<br />z_value: 3.7549966711<br />p_value: 0.000173343782164<br />adj_p_value: 0.000346687564328<br />--------------------------------------------------------------------------<br /><br />Comparing: anecdote vs other<br />z_value: 2.63648702439<br />p_value: 0.00837694039232<br />adj_p_value: 0.00837694039232<br />--------------------------------------------------------------------------
+</body>
+</html>
